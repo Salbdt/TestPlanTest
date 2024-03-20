@@ -8,7 +8,6 @@
 
   <ItemGroup>
     <Folder Include="DTOs\" />
-    <Folder Include="Services\Implementations\" />
     <Folder Include="Support\Helpers\" />
     <Folder Include="Support\Errors\" />
   </ItemGroup>

@@ -1,10 +1,9 @@
 ﻿using Domain.Entities;
 
-namespace Domain.Repositories
+namespace Domain.Repositories;
+
+public interface IPersonRepository
 {
-    public interface IPersonRepository
-    {
-        Task<List<Person>> GetAll();
-        Task<Person> GetById(int id);
-    }
+    Task<List<Person>> GetAll();
+    Task<Person> GetById(int id);
 }

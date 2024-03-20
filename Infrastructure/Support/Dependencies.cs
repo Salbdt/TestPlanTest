@@ -1,4 +1,6 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using Domain.Repositories;
+using Infrastructure.Repositories;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace Infrastructure.Support;
 
@@ -12,6 +14,6 @@ public static class Dependencies
 
     private static void RegisterRepositories(IServiceCollection services)
     {
-
+        services.AddScoped<IPersonRepository, PersonRepository>();
     }
 }

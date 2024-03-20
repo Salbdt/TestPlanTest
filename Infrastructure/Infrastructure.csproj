@@ -8,12 +8,13 @@
 
   <ItemGroup>
     <Folder Include="StoredProcedures\" />
-    <Folder Include="Repositories\" />
-    <Folder Include="Support\Helpers\" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Dapper.Oracle" Version="2.0.3" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="8.0.0" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
+    <PackageReference Include="Oracle.ManagedDataAccess.Core" Version="3.21.130" />
   </ItemGroup>
 
   <ItemGroup>
